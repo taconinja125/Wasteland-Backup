@@ -220,7 +220,7 @@ ForEach($adapter in $netAdapters){
 }
 Write-Log -Message "INFO: Upload directory: $backupDestination" -File $backupLogFile
 
-#get logged in user
+# Get logged in user 
 if (Test-Path -Path $userList -ErrorAction SilentlyContinue) {
     Remove-Item -Path $userList -Force
 }
